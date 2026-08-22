@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="dark_blue">#0D1B4C</color>
+    <color name="dark_blue_light">#1A237E</color>
+    <color name="gray_bg">#ECEFF1</color>
+    <color name="gray_text">#546E7A</color>
+    <color name="gray_divider">#CFD8DC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="console_bg">#212B36</color>
+    <color name="console_text">#CFD8DC</color>
+    <color name="status_dot_default">#B0BEC5</color>
+    <color name="status_dot_active">#2E7D32</color>
 </resources>

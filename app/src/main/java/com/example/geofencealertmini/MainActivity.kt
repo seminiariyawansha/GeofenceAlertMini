@@ -86,8 +86,11 @@ class MainActivity : AppCompatActivity() {
 
         geofencingClient.addGeofences(geofencingRequest, geofencePendingIntent)
             .addOnSuccessListener {
-                activeGeofenceLabel.text = "Active Geofence: Campus (lat $geofenceLat, lng $geofenceLng, radius ${geofenceRadius}m)"
-                statusText.text = "Status: Geofence registered ✅"
+                activeGeofenceLabel.text = "Campus — lat $geofenceLat, lng $geofenceLng, radius ${geofenceRadius}m"
+                statusText.text = "Geofence registered"
+                findViewById<android.view.View>(R.id.statusDot).setBackgroundColor(
+                    resources.getColor(R.color.status_dot_active, theme)
+                )
                 appendLog("Geofence registered successfully")
             }
             .addOnFailureListener { e ->
