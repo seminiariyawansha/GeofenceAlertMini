@@ -24,6 +24,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <receiver
+                android:name=".GeofenceBroadcastReceiver"
+                android:enabled="true"
+                android:exported="true" />
         </activity>
     </application>
 
